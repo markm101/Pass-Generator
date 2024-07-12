@@ -20,5 +20,3 @@ def generator(input):
     return (list[ran])
 
 
-                
-

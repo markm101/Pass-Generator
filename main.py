@@ -12,10 +12,10 @@ def main():
     #symbols = input('Include symbols (!@#$%^?) (Y/N) : ')
     print('hello world')
 
-    p1 = pw.Password(2, 3, 4, 5)
+    p1 = pw.Password(15)
     print(p1)
 
-
+ 
 
 
 
