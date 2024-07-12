@@ -1,5 +1,5 @@
-import randchars
-
+import randchars as rs
+import string
 
 
 
@@ -10,10 +10,15 @@ def main():
     #characters = int(input('maximum number of characters? : '))
     #symbols = input('Include symbols (!@#$%^?) (Y/N) : ')
 
-
-
-
-    print(randchars.gensymbols())
+    #generator test (ignore)
+    while True:
+        a = rs.generator('number')
+        if a == '0':
+            print(a)
+            print ('done')
+            break
+        else:
+            print(a)
 
 
 
