@@ -18,3 +18,7 @@ def generator(input):
         ran = (int(random.randrange(0,10)))
         
     return (list[ran])
+
+
+                
+

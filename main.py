@@ -1,4 +1,5 @@
 import randchars as rs
+import password as pw
 import string
 
 
@@ -9,17 +10,10 @@ def main():
     #mini = int(input('minimum number of characters? : '))
     #characters = int(input('maximum number of characters? : '))
     #symbols = input('Include symbols (!@#$%^?) (Y/N) : ')
+    print('hello world')
 
-    #generator test (ignore)
-    while True:
-        a = rs.generator('number')
-        if a == '0':
-            print(a)
-            print ('done')
-            break
-        else:
-            print(a)
-
+    p1 = pw.Password(2, 3, 4, 5)
+    print(p1)
 
 
 
