@@ -36,8 +36,10 @@ class Password:
         self.user = username
 
     def savePass(self, key):
+        if ' ' in key:
+            keyfix = key.replace(' ', '_')
         with open("myfile.txt", 'a') as f:
-            f.write(f"{key} {self.user} {self.pw}\n")
+            f.write(f"{keyfix} {self.user} {self.pw}\n")
         print('saved')
 
 
@@ -47,6 +49,8 @@ class Password:
 
 
 def loadPass(key):
+    if ' ' in key:
+            keyfix = key.replace(' ', '_')
     out = f"No login for site {key}"
     passwords = {}
     with open("myfile.txt", 'r') as f:
@@ -54,7 +58,7 @@ def loadPass(key):
             i = k.split(' ')
             passwords[i[0]] = [i[1], i[2]]
     for i in passwords:
-        if i == key:
+        if i == keyfix:
             out = f"Username and Password for {key} are : {passwords[i][0]} and {passwords[i][1]}"
     print(out)
 

@@ -6,11 +6,5 @@ import userinput as ui
 def main():
     ui.beginning()
 
-
-
-
-
-
-
 if __name__ == "__main__": 
     main()
