@@ -36,6 +36,7 @@ class Password:
         self.user = username
 
     def savePass(self, key):
+        keyfix = key
         if ' ' in key:
             keyfix = key.replace(' ', '_')
         with open("myfile.txt", 'a') as f:
